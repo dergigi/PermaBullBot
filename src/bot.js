@@ -1,4 +1,7 @@
 const Twit = require('twit')
+const bent = require('bent');
+const getJSON = bent('json')
+
 const config = require('./config')
 const quotes = require('./quotes.json')
 
@@ -8,12 +11,13 @@ const TWITTER_URL = 'https://twitter.com/'
 const GREETING = 'Good morning bitcoiners. '
 const BULLISH = ' Bullish.'
 
-function postRandomQuote() {
+async function postRandomQuote() {
   var quoteWithAuthor = ""
   do {
     // Pick a random quote
     var quote = quotes[Math.floor(Math.random()*quotes.length)]
     quote = GREETING + quote['body'] + BULLISH
+    quote = await replacePlaceholders(quote)
     if (quote.length > config.character_limit) {
       console.log("Quote too long to be posted on twitter. Picking another one...")
     }
@@ -21,6 +25,20 @@ function postRandomQuote() {
 
   // Post to twitter
   postTweet(quote)
+}
+
+async function replacePlaceholders(quoteStr) {
+  if (!quoteStr.includes('$')) {
+    return quoteStr
+  }
+
+  // BLOCKHEIGHT
+  let latestblock = await getJSON('https://blockchain.info/latestblock')
+  let height = latestblock["height"];
+
+  quoteStr = quoteStr.replace('$BLOCKHEIGHT', height)
+
+  return quoteStr
 }
 
 /**
