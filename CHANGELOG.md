@@ -1,11 +1,9 @@
-[![Follow @btc_quotes](https://img.shields.io/twitter/follow/btc_quotes.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=btc_quotes)
+[![Follow @PermaBullBot](https://img.shields.io/twitter/follow/PermaBullBot.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=PermaBullBot)
 
-Changelog for the [@btc_quotes](https://twitter.com/btc_quotes) twitter bot.
+Changelog for the [@PermaBullBot](https://twitter.com/PermaBullBot) twitter bot.
 
 ### Version 0.0.1
 
-* Primitive tweet functionality
-* Add update script to sync quotes with [bitcoin-quotes.com](https://www.bitcoin-quotes.com)
-* Only tweet out quotes that are short enough
+* Tweet the bullish tweets
 
-[![Follow @btc_quotes](https://img.shields.io/twitter/follow/btc_quotes.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=btc_quotes)
+[![Follow @PermaBullBot](https://img.shields.io/twitter/follow/PermaBullBot.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=PermaBullBot)
