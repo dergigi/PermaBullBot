@@ -3,7 +3,7 @@ const bent = require('bent');
 const getJSON = bent('json')
 
 const config = require('./config')
-const quotes = require('./quotes2.json')
+const quotes = require('./quotes.json')
 
 const bot = new Twit(config)
 
