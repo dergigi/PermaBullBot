@@ -13,7 +13,7 @@ function postRandomQuote() {
   do {
     // Pick a random quote
     var quote = quotes[Math.floor(Math.random()*quotes.length)]
-    quote = GREETING + quote + BULLISH
+    quote = GREETING + quote['body'] + BULLISH
     if (quote.length > config.character_limit) {
       console.log("Quote too long to be posted on twitter. Picking another one...")
     }
