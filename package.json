@@ -1,7 +1,7 @@
 {
-  "name": "btcquotesbot",
+  "name": "btcpermabullbot",
   "version": "0.0.1",
-  "description": "Twitter bot posting quotes related to Bitcoin",
+  "description": "A twitter bot that's bullish on Bitcoin.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -12,7 +12,6 @@
   "keywords": [
     "twitter",
     "bot",
-    "quote",
     "bitcoin"
   ],
   "author": "dergigi",
