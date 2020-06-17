@@ -3,7 +3,7 @@ const bent = require('bent');
 const getJSON = bent('json')
 
 const config = require('./config')
-const quotes = require('./quotes.json')
+const quotes = require('./quotes2.json')
 
 const bot = new Twit(config)
 
@@ -36,7 +36,22 @@ async function replacePlaceholders(quoteStr) {
   let latestblock = await getJSON('https://blockchain.info/latestblock')
   let height = latestblock["height"];
 
+  // BLOCKSUNTIL21
+  let blocksuntil21 = 6930000 - height
+
+  // REWARDERA
+  let rewardera = Math.floor(height / 210000) + 1
+  let rewarderastogo = 34 - rewardera
+
+  // BLOCKSTOHALVING
+  let blocksafterhalving = height % 210000
+  let blockstohalving = 210000 - blocksafterhalving
+
   quoteStr = quoteStr.replace('$BLOCKHEIGHT', height)
+  quoteStr = quoteStr.replace('$BLOCKSTOHALVING', blockstohalving)
+  quoteStr = quoteStr.replace('$REWARDERA', rewardera)
+  quoteStr = quoteStr.replace('$REWARDERASTOGO', rewarderastogo)
+  quoteStr = quoteStr.replace('$BLOCKSUNTIL21', blocksuntil21)
 
   return quoteStr
 }
