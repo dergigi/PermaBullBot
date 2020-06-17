@@ -6,12 +6,12 @@
 
 [![Follow @PermaBullBot](https://img.shields.io/twitter/follow/PermaBullBot.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=PermaBullBot)
 
-A simple twitter bot to disseminate Bitcoin-related quotes from various sources to a wider audience. Quotes are taken at random from [Bitcoin-Quotes.com](https://www.bitcoin-quotes.com/), curated and indexed by [@dergigi](https://twitter.com/dergigi).
+The most bullish twitter bot of all time.
 
 Feel free to [follow the bot](https://twitter.com/intent/follow?screen_name=PermaBullBot) on twitter.
 
 ---
 
-Made with ❤️ by [@dergigi](https://github.com/dergigi/). Happy about any contributions. If you can't contribute but have some satoshis to spare, feel free to [throw a taco](https://tippin.me/@dergigi) in my general direction! [🌮⚡️](https://tippin.me/@dergigi)
+Made with ❤️ by [@dergigi](https://github.com/dergigi/). If you have some satoshis to spare feel free to [support me directly](https://dergigi.com/support/) or [throw a taco](https://tippin.me/@dergigi) in my general direction! [🌮⚡️](https://tippin.me/@dergigi)
 
 [![Follow @PermaBullBot](https://img.shields.io/twitter/follow/PermaBullBot.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=PermaBullBot)
